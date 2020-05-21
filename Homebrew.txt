@@ -1,0 +1,61 @@
+Homebrew安装
+
+
+官方地址：https://brew.sh
+
+=======================================================================================
+1.安装安装 Homebrew
+按照官网的说明，直接复制命令到终端中回车即可
+
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+出现Installation successful! 提示安装成功！
+
+
+2.接着安装ruby，继续在终端中进行
+
+brew install ruby 
+
+3.查看ruby源
+
+  ~~~查看ruby源 gem sources -l
+
+*** CURRENT SOURCES ***
+https://rubygems.org/
+
+  ~~~替换ruby源
+
+gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/
+
+gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/
+
+Ps:https://gems.ruby-china.com
+
+  ~~~查看是否替换成功
+
+gem sources -l
+
+ps： gem升级  
+
+gem update --system
+
+
+常用命令
+
+ 1 # 查看版本
+ 2 $ gem --version
+ 3 # 清除过期的gem
+ 4 $ sudo gem cleanup
+ 5 # 安装包
+ 6 $ sudo gem install cocoapods
+ 7 # 删除包
+ 8 $ gem uninstall cocoapods
+ 9 # 更新包
+10 $ sudo gem update
+11 # 列出本地安装的包
+12 $ gem list
+
+
+
+
+

@@ -1,0 +1,8 @@
+ rvm  安装命令
+curl -L https://get.rvm.io | bash -s stable
+
+
+rvm -v 
+
+激活
+source /Users/admin/.rvm/scripts/rvm
